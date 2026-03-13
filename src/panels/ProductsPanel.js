@@ -1,5 +1,5 @@
 import React from 'react';
-import { Group, Box, Input, Flex } from '@vkontakte/vkui';
+import { Group, Box, Input, Flex, Search } from '@vkontakte/vkui';
 import { ProductCardItem } from './ProductCard';
 
 export const ProductsPanel = ({ 
@@ -21,10 +21,11 @@ export const ProductsPanel = ({
   return (
     <Group style={{ padding: 16 }}>
       <Box style={{ marginBottom: 16 }}>
-        <Input 
+        <Search 
           value={searchQuery}
           onChange={(e) => setSearchQuery(e.target.value)}
           placeholder="Поиск продуктов..."
+          noPadding
         />
       </Box>
       

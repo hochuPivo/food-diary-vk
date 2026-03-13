@@ -9,8 +9,7 @@ export const ProductCardItem = ({ product, onClick, isSelected }) => {
       style={{ 
         cursor: 'pointer', 
         marginBottom: 8, 
-        padding: 12,
-        border: isSelected ? '2px solid #2688eb' : 'none'
+        padding: 12
       }}
     >
       <Text weight="2" style={{ marginBottom: 8 }}>{product.name}</Text>
